@@ -73,7 +73,7 @@ formulaInput.addEventListener("keydown",(e)=>{
         {
             updateCell(downstream[i]);
         }
-
+        formulaInput.value="";
         dataobj[selectedCellAdress]=cellObj;
     }
 })
@@ -122,7 +122,10 @@ for(let i=1;i<100;i++)
             value:undefined,
             formula:undefined,
             upstream:[],
-            downstream:[]
+            downstream:[],
+            align:"left",
+            color:"black",
+            bgColor:"white"
         }
 
         let cellDiv=document.createElement("div");
